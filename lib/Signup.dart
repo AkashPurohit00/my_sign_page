@@ -21,20 +21,16 @@ class _SignupPageState extends State<SignupPage> {
     return Container(
 
       decoration: BoxDecoration(
-        color:myColor,
-        image: DecorationImage(
-            image:AssetImage('assets/images/Ladki.jpg'),
-            fit: BoxFit.cover,
-            colorFilter: ColorFilter.mode(myColor.withOpacity(0.2), BlendMode.dstATop)
+          color:Color(0XFFFFEDF2),
+        
 
-        ),
 
 
       ),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Stack(children: [
-          Positioned(top:45,child:_buildTop()),
+          Positioned(top:40,child:_buildTop()),
           Positioned(bottom:0,child:_buildBottom()),
         ],),
       ),
@@ -48,7 +44,7 @@ class _SignupPageState extends State<SignupPage> {
         children: [
           CircleAvatar(
 
-            backgroundImage: AssetImage('assets/images/new.png'),
+            backgroundImage: AssetImage('assets/images/newsafe.png'),
             radius: 90,
           ),
 
@@ -82,7 +78,7 @@ class _SignupPageState extends State<SignupPage> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text("Welcome",style: TextStyle(
-            color:Colors.deepPurple,
+            color:Color(0XFFDC2857),
             fontSize: 32,
             fontWeight: FontWeight.w500
         ),),
@@ -169,7 +165,7 @@ class _SignupPageState extends State<SignupPage> {
         style: ElevatedButton.styleFrom(
             shape: const StadiumBorder(),
             elevation: 20,
-            shadowColor: myColor,
+            shadowColor: Color(0XFFDC2857),
             minimumSize: const Size.fromHeight(60)
         ),
         child:const Text("Sign Up") );
